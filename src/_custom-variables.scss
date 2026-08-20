@@ -1,0 +1,76 @@
+// stylelint-disable value-keyword-case
+
+$ptsans-font-family: PtSans, Arial, sans-serif;
+$galette-orange: #ffb619;
+$galette-gray: #636b70;
+$galette-dark-gray: #242424;
+$galette-white: #fff;
+$galette-black: #000;
+
+@use 'variables' with (
+  $brand-primary: $galette-orange,
+  $brand-text: $galette-dark-gray,
+  $font-family-sans-serif: $ptsans-font-family,
+  $top-menu-bg: $galette-orange,
+  $top-menu-text: $galette-dark-gray,
+  $top-menu-link: $galette-dark-gray,
+  $top-menu-link-hover: $galette-black,
+  $header-bg: $galette-gray,
+  $header-text: $galette-white,
+  $header-link: $galette-white,
+  $quick-search-label-bg: $galette-gray,
+  $quick-search-border-radius: 2px,
+  $component-active-bg: $galette-orange,
+  $tracker-custom-colors-map: (
+    2: (
+      background: #0c73b1,
+      color: $galette-white
+    )
+  )
+);
+
+@font-face {
+  font-family: PtSans;
+  font-style: normal;
+  font-weight: normal;
+  src: url("../webfonts/ptsans-regular-webfont.woff2") format("woff2"),
+    url("../webfonts/ptsans-regular-webfont.woff") format("woff");
+}
+
+@font-face {
+  font-family: PtSans;
+  font-style: normal;
+  font-weight: bold;
+  src: url("../webfonts/ptsans-bold-webfont.woff2") format("woff2"),
+    url("../webfonts/ptsans-bold-webfont.woff") format("woff");
+}
+
+@font-face {
+  font-family: PtSans;
+  font-style: italic;
+  font-weight: bold;
+  src: url("../webfonts/ptsans-bolditalic-webfont.woff2") format("woff2"),
+    url("../webfonts/ptsans-bolditalic-webfont.woff") format("woff");
+}
+
+@font-face {
+  font-family: PtSans;
+  font-style: italic;
+  font-weight: normal;
+  src: url("../webfonts/ptsans-italic-webfont.woff2") format("woff2"),
+    url("../webfonts/ptsans-italic-webfont.woff") format("woff");
+}
+
+.theme-Opale_galette {
+  #top-menu a {
+    font-weight: 400;
+  }
+
+  #main #sidebar-switch-panel {
+    line-height: .9;
+  }
+
+  .members.box a.group {
+    margin-top: -6px;
+  }
+}
